@@ -1,0 +1,20 @@
+.dots, 
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
+ {
+  display: inline-block;
+  position: absolute;
+  top: 200px;
+  right: 0;
+  z-index: 10;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  margin-right: 15px;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background: $gray;
+}
+
+
+

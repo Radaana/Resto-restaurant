@@ -1,0 +1,21 @@
+.rating {
+  height: 15px;
+  width: 100px;
+}
+
+.rating__star {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  // fill: $lightGray;
+  // color: $lightGray;
+  // font-size: 13px;
+  // font-family: 'star', sans-serif;
+  background-image: url('../img/star-empty.png');
+
+  &--filled {
+    // fill: #f1df1a;
+    background-image: url('../img/star-filled.png')
+  }
+
+}

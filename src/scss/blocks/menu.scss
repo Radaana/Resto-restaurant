@@ -1,0 +1,10 @@
+.menu__list {
+  width: 100%;
+  // display: flex;
+  display: block;
+  flex-wrap: wrap;
+
+  &--hidden {
+    display: none;
+  }
+}

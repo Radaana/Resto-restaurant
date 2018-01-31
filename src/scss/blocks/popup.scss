@@ -1,0 +1,29 @@
+.popup {
+  position: absolute;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  display:none;
+  text-align:center;
+}
+
+.popup_bg {
+
+  background:rgba(0,0,0,0.4);
+  position:absolute;
+  z-index:1;
+  height:100%;
+  width:100%;
+
+}
+
+.popup_img {
+  position: relative;
+  margin:0 auto;
+  z-index:2;
+  max-height:94%;
+  max-width:94%;
+  margin:1% 0 0 0;
+
+}

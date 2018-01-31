@@ -1,0 +1,12 @@
+.bottom-nav__link {
+  display: inline-block;
+  color: #fff;
+  font-family: 'aleoregular', sans-serif;
+  padding: 10px 0;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    border-bottom: 2px solid $red;
+  }
+  
+}

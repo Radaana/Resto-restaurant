@@ -1,0 +1,28 @@
+.dishes__container {
+  position: relative;
+}
+
+.dishes__slider { //container
+  width: 100%;
+  overflow: hidden;
+}
+
+.dishes__list { // wrapper
+  display: flex;
+  // width: 400%;
+  // justify-content: space-between;
+
+}
+
+.dishes__item {
+  width: 20%;
+  max-width: 230px;
+  // flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

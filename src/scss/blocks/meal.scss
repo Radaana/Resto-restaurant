@@ -1,0 +1,27 @@
+.meal {
+  // display: flex;
+  // flex-direction: column;
+  display: inline-block;
+  width: 49%;
+  padding: 30px 60px;
+}
+
+.menu__firstLine {
+  display: flex;
+  align-items: baseline;
+}
+
+.meal__name {
+  color: $dark;
+  margin-right: 10px;
+}
+
+.menu__price {
+  margin-left: 10px;
+}
+
+.meal__composition {
+  color: $gray;
+  font-family: 'aleolightitalic', sans-serif;
+  font-size: 12px;
+}

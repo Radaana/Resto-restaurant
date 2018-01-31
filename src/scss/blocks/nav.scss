@@ -1,0 +1,19 @@
+.nav__list {
+  width: 490px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__link {
+  display: inline-block;
+  color: $dark;
+  font-family: 'aleoregular', sans-serif;
+  padding: 10px 10px;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    border-bottom: 2px solid $red;
+  }
+}
