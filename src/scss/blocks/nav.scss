@@ -1,19 +1,46 @@
+.nav {
+  @include screen-sm {
+        position: absolute;
+        top: rem(55px);
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: #fff;
+        height: rem(0px);
+        overflow: hidden;
+        transition: .5s;
+    }
+}
+
 .nav__list {
-  width: 490px;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include screen-xs {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+}
+
+.nav__item {
+  margin-right: rem(15px);
+
+  &:last-child {
+    margin-right: rem(0px);
+  }
 }
 
 .nav__link {
   display: inline-block;
   color: $dark;
   font-family: 'aleoregular', sans-serif;
-  padding: 10px 10px;
-  border-bottom: 2px solid transparent;
+  padding: rem(10px) rem(10px);
+  border-bottom: rem(2px) solid transparent;
+  
 
   &:hover {
-    border-bottom: 2px solid $red;
+    border-bottom: rem(2px) solid $red;
   }
 }

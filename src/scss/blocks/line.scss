@@ -1,33 +1,52 @@
-.line {
-  display: inline-block;
-  width: 40px;
-  height: 10px;
-  position: relative;
+.line
+{
+    position: relative;
 
-  &::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: #fff;
-    position: absolute;
-    top: 3px;
-  }
+    display: inline-block;
 
-  &--inMenu {
-    flex-grow: 1;
-    &::after {
-      background-color: $lightGray;
-      top: 5px;
+    width: rem(40px);
+    height: rem(10px);
+
+    &::after
+    {
+        position: absolute;
+        top: rem(3px);
+
+        display: block;
+
+        width: 100%;
+        height: rem(1px);
+
+        content: '';
+
+        background-color: #fff;
     }
-  }
 
-  &--inTitle {
-    width: 200px;
+    &--inMenu
+    {
+        flex-grow: 1;
+        &::after
+        {
+            top: rem(5px);
 
-    &::after {
-      background-color: $lightGray;
-      top: 1px;
+            background-color: $lightGray;
+        }
     }
-  }
+
+    &--inTitle
+    {
+        width: rem(200px);
+
+        @include screen-sm
+        {
+            width: rem(40px);
+        }
+
+        &::after
+        {
+            top: rem(1px);
+
+            background-color: $lightGray;
+        }
+    }
 }

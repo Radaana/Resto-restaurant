@@ -1,19 +1,22 @@
-$(document).ready(function() { // Ждём загрузки страницы
+$(document).ready(function() { 
 
   $(".gallery__img").click(function(){  
-    let img = $(this);    // Получаем изображение, на которое кликнули
-    let src = img.attr('src').slice(0, -4); // Достаем из этого изображения путь до картинки
-    $(".gallery__list").append("<div class='popup'>"+ //Добавляем в тело документа разметку всплывающего окна
-                    "<div class='popup_bg'></div>"+ // Блок, который будет служить фоном затемненным
-                    "<img src='"+src+"-big.png' class='popup_img' />"+ // Само увеличенное фото
-                    "</div>");
+    if ($('.maincontent').outerWidth() > 768) {
+      let img = $(this); 
+      let src = img.attr('src').slice(0, -4); 
+      $(".gallery__list").append("<div class='popup'>"+ 
+                      "<div class='popup_bg'></div>"+ 
+                      "<img src='"+src+"-big.png' class='popup_img' />"+ 
+                      "</div>");
 
-    $(".popup").fadeIn(400); // Медленно выводим изображение
-    $(".popup_bg").add('.popup').click(function(){    // Событие клика на затемненный фон      
-      $(".popup").fadeOut(400);    // Медленно убираем всплывающее окно
-      setTimeout(function() {    // Выставляем таймер
-        $(".popup").remove(); // Удаляем разметку всплывающего окна
-      }, 400);
-    });
-  });
-}); // READY end
+      $(".popup").fadeIn(400); 
+      $(".popup_bg").add('.popup').click(function(){ 
+        $(".popup").fadeOut(400);
+        setTimeout(function() {
+          $(".popup").remove(); 
+        }, 400);
+      });
+    }
+    
+  }); // Click END
+}); // ready END

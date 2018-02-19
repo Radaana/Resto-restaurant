@@ -1,16 +1,22 @@
 .promo {
   text-align: center;
+
+  @include screen-sm { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .promo__header {
   padding: 0;
   margin: 0;
   font-family: 'manoregular', sans-serif;
-  font-size: 100px;
+  font-size: rem(100px);
   text-transform: capitalize;
   color: #fff;
   font-weight: lighter;
-  line-height: 60px;
+  line-height: rem(90px);
   text-align: center;
 }
 

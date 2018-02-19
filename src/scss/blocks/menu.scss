@@ -1,10 +1,13 @@
-.menu__list {
-  width: 100%;
-  // display: flex;
-  display: block;
-  flex-wrap: wrap;
+.menu__list
+{
+    display: flex;
 
-  &--hidden {
-    display: none;
-  }
+    width: 100%;
+
+    flex-wrap: wrap;
+
+    &--hidden
+    {
+        display: none;
+    }
 }

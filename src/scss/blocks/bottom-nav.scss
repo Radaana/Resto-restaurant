@@ -1,12 +1,16 @@
-.bottom-nav__link {
-  display: inline-block;
-  color: #fff;
-  font-family: 'aleoregular', sans-serif;
-  padding: 10px 0;
-  border-bottom: 2px solid transparent;
+.bottom-nav__link
+{
+    font-family: 'aleoregular', sans-serif;
 
-  &:hover {
-    border-bottom: 2px solid $red;
-  }
-  
+    display: inline-block;
+
+    padding: rem(10px) 0;
+
+    color: #fff;
+    border-bottom: rem(2px) solid transparent;
+
+    &:hover
+    {
+        border-bottom: rem(2px) solid $red;
+    }
 }

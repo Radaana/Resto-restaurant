@@ -15,6 +15,3 @@ $gray :                       #555555;
 
 
 
-@function rem($px) {
-    @return $px / 16px + 0rem;
-}

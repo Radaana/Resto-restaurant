@@ -1,20 +1,34 @@
-.dots, 
-.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
- {
-  display: inline-block;
-  position: absolute;
-  top: 200px;
-  right: 0;
-  z-index: 10;
+.dots,
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction
+{
+    position: absolute;
+    z-index: 10;
+    top: rem(200px);
+    right: rem(45px);
+
+    display: inline-block;
+
+    @include screen-xs
+    {
+        top: rem(270px);
+        right: initial;
+        left: rem(30px);
+    }
 }
 
-.swiper-pagination-clickable .swiper-pagination-bullet {
-  margin-right: 15px;
+.swiper-pagination-clickable .swiper-pagination-bullet
+{
+    margin-right: rem(15px);
+
+    @include screen-sm
+    {
+        margin-right: rem(10px);
+    }
 }
 
-.swiper-pagination-clickable .swiper-pagination-bullet {
-  background: $gray;
+.swiper-pagination-clickable .swiper-pagination-bullet
+{
+    background: $gray;
 }
-
-
-

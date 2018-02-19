@@ -1,17 +1,23 @@
-.dish__img {
-  width: 100%;
-  height: auto;
-  max-height: 190px;
+.dish__img
+{
+    width: 100%;
+    height: auto;
+    max-height: rem(190px);
 }
 
-.dish__text {
-  width: 100%;
-  padding-top: 25px;
-  padding-bottom: 10px;
-  display: flex;
-  justify-content: space-between;
+.dish__text
+{
+    display: flex;
+
+    width: 100%;
+    padding-top: rem(25px);
+    padding-bottom: rem(10px);
+
+    justify-content: space-between;
 }
 
-.dish__name, .dish__price {
-  display: inline-block;
+.dish__name,
+.dish__price
+{
+    display: inline-block;
 }

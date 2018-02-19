@@ -1,28 +1,38 @@
-.logo {
-  width: 85px;
-  height: 32px;
+.logo
+{
+    width: rem(85px);
+    height: rem(32px);
 }
 
-.logo__link {
-  display: block;
-  font-size: 0px;
+.logo__link
+{
+    font-size: rem(0px);
+
+    display: block;
 }
 
-.logo__resto {
-  display: inline-block;
-  width: 69px;
-  height: 30px;
-  fill: $dark;
+.logo__resto
+{
+    display: inline-block;
 
-  &--footer {
-    fill: #fff;
-  }
+    width: rem(69px);
+    height: rem(30px);
+
+    fill: $dark;
+
+    &--footer
+    {
+        fill: #fff;
+    }
 }
 
-.logo__dots {
-  display: inline-block;
-  width: 12px;
-  height: 7px;
-  fill: $red;
-  margin-left: -7px;
+.logo__dots
+{
+    display: inline-block;
+
+    width: rem(12px);
+    height: rem(7px);
+    margin-left: rem(-7px);
+
+    fill: $red;
 }

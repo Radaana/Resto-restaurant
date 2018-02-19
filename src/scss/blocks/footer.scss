@@ -1,18 +1,44 @@
-.footer {
-  height: 320px;
-  width: 100%;
-  background-color: $dark;
-  
+.footer
+{
+    width: 100%;
+    height: rem(320px);
+
+    background-color: $dark;
+
+    @include screen-sm
+    {
+        height: auto;
+    }
 }
 
-.footer__container {
-  display: flex;
-  color: #fff;
-  font-family: 'aleolight', sans-serif;
-  padding: 90px 0;
+.footer__container
+{
+    font-family: 'aleolight', sans-serif;
+
+    display: flex;
+
+    padding: rem(90px) 5%;
+
+    color: #fff;
+
+    @include screen-sm
+    {
+        padding: 5% 5%;
+
+        flex-wrap: wrap;
+    }
 }
 
-.footer__column {
-  width: 25%;
-  height: 100%;
+.footer__column
+{
+    width: 25%;
+    height: 100%;
+
+    @include screen-sm
+    {
+        width: 50%;
+        height: auto;
+        margin-bottom: rem(16px);
+        // text-align: center;
+    }
 }

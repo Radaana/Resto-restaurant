@@ -1,12 +1,15 @@
-.greeting {
-  background-color: $gray;
-  background-image: url('../img/greeting-bg.png');
-  background-size: cover;
-  width: 100%;
-  height: 580px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: inset 0px -20px 0px -10px rgba(#f34949, 0.7);
+.greeting
+{
+    display: flex;
 
+    width: 100%;
+    height: rem(580px);
+
+    background-color: $gray;
+    background-image: url('../img/greeting-bg.png');
+    background-size: cover;
+    box-shadow: inset rem(0px) rem(-20px) rem(0px) rem(-10px) rgba(#f34949, .7);
+
+    align-items: center;
+    justify-content: center;
 }

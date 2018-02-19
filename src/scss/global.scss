@@ -1,20 +1,29 @@
 html {
     font-size: $font-size;
+
+    @include screen-sm {
+        $sm : $font-size - 1;
+        font-size: rem($sm);
+    }
+
+    @include screen-xs {
+        $xs : $font-size - 3;
+        font-size: rem($xs);
+    }
 }
+
 
 body {
   margin: 0;
   padding: 0;
-  font-size: $font-size;
+  // font-size: $font-size;
   font-family: 'aleoregular', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
 
 
-  // @media (min-width: 768px) {
-  //   display: block;
-  // }
+
 }
 
 *, *::before, *::after { 

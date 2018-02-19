@@ -1,27 +1,40 @@
-.meal {
-  // display: flex;
-  // flex-direction: column;
-  display: inline-block;
-  width: 49%;
-  padding: 30px 60px;
+.meal
+{
+    display: inline-block;
+
+    width: 49%;
+    padding: rem(30px) rem(60px);
+
+    @include screen-sm
+    {
+        width: 100%;
+        padding: rem(10px) rem(40px);
+    }
 }
 
-.menu__firstLine {
-  display: flex;
-  align-items: baseline;
+.menu__firstLine
+{
+    display: flex;
+
+    align-items: baseline;
 }
 
-.meal__name {
-  color: $dark;
-  margin-right: 10px;
+.meal__name
+{
+    margin-right: rem(10px);
+
+    color: $dark;
 }
 
-.menu__price {
-  margin-left: 10px;
+.menu__price
+{
+    margin-left: rem(10px);
 }
 
-.meal__composition {
-  color: $gray;
-  font-family: 'aleolightitalic', sans-serif;
-  font-size: 12px;
+.meal__composition
+{
+    font-family: 'aleolightitalic', sans-serif;
+    font-size: rem(12px);
+
+    color: $gray;
 }

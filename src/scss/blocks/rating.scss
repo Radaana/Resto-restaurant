@@ -1,20 +1,19 @@
 .rating {
-  height: 15px;
-  width: 100px;
+  height: rem(15px);
+  width: rem(100px);
 }
 
 .rating__star {
   display: inline-block;
-  width: 13px;
-  height: 13px;
+  width: rem(13px);
+  height: rem(13px);
   // fill: $lightGray;
   // color: $lightGray;
-  // font-size: 13px;
+  // font-size: rem(13px);
   // font-family: 'star', sans-serif;
   background-image: url('../img/star-empty.png');
 
   &--filled {
-    // fill: #f1df1a;
     background-image: url('../img/star-filled.png')
   }
 
